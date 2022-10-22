@@ -266,13 +266,13 @@ public final class PlayerExpansion extends PlaceholderExpansion implements Confi
             case "direction_xz":
                 return getXZDirection(p);
             case "world":
-                if (p.getWorld().getName().equals("earth")) {
-                    return "&aEarth";
+                if (p.getWorld().getName().equals("estates")) {
+                    return "&aEstate";
                 }
-                if (p.getWorld().getName().equals("earth_nether")) {
+                if (p.getWorld().getName().equals("estates_nether")) {
                     return "&cNether";
                 }
-                if (p.getWorld().getName().equals("earth_the_end")) {
+                if (p.getWorld().getName().equals("estates_end")) {
                     return "&eEnd";
                 }
                 if (p.getWorld().getName().equals("spawn")) {
