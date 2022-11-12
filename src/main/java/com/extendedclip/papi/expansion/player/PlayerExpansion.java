@@ -276,7 +276,7 @@ public final class PlayerExpansion extends PlaceholderExpansion implements Confi
                 }
                 if (p.getWorld().getName().equals("spawn_the_end")) {
                     //return "<yellow>End";
-                    return "&eEnd;";
+                    return "&eEnd";
                 }
                 if (p.getWorld().getName().equals("spawn")) {
                     // return "<aqua>Spawn";
