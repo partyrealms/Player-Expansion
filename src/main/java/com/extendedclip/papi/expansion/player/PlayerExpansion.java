@@ -267,22 +267,28 @@ public final class PlayerExpansion extends PlaceholderExpansion implements Confi
                 return getXZDirection(p);
             case "world":
                 if (p.getWorld().getName().equals("arid") || p.getWorld().getName().equals("boreal") || p.getWorld().getName().equals("temperate") || p.getWorld().getName().equals("tropical")) {
-                    return "<green>Estate";
+                    // return "<green>Estate";
+                    return "&aEstate";
                 }
-                if (p.getWorld().getName().equals("estates_nether")) {
-                    return "<red>Nether";
+                if (p.getWorld().getName().equals("spawn_nether")) {
+                    // return "<red>Nether";
+                    return "&CNether";
                 }
-                if (p.getWorld().getName().equals("estates_end")) {
-                    return "<yellow>End";
+                if (p.getWorld().getName().equals("spawn_the_end")) {
+                    //return "<yellow>End";
+                    return "&eEnd;";
                 }
                 if (p.getWorld().getName().equals("spawn")) {
-                    return "<aqua>Spawn";
+                    // return "<aqua>Spawn";
+                    return "&bSpawn";
                 }
                 if (p.getWorld().getName().equals("plots")) {
-                    return "<light_purple>Miscellaneous";
+                    // return "<light_purple>Miscellaneous";
+                    return "&dMiscellaneous";
                 }
                 if (p.getWorld().getName().equals("frontier")) {
-                    return "<gold>Frontier";
+                    // return "<gold>Frontier";
+                    return "&6Frontier";
                 }
                 return p.getWorld().getName();
             case "world_type":
